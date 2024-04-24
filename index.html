@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Company</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0e4d7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  .header, .footer {
+    background-color: #333; /* Darker background for better contrast */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+  }
+  .nav {
+    background-color: #444; /* Darker background for better contrast */
+    padding: 0.5em 0;
+    text-align: center;
+  }
+  .nav button {
+    background-color: #555; /* Darker background for better contrast */
+    color: white;
+    margin: 0 0.5em;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+  }
+  .product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2em;
+  }
+  .product-item {
+    width: 30%;
+    margin-bottom: 1em;
+  }
+  .product-item img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  .product-description {
+    background-color: #ddd; /* Lighter background for better contrast */
+    padding: 1em;
+    border-radius: 5px;
+  }
+  .form-container {
+    background-color: #ccc; /* Lighter background for better contrast */
+    padding: 2em;
+  }
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-container label {
+    margin: 0.5em 0;
+  }
+  .form-container input, .form-container textarea {
+    padding: 0.5em;
+    margin-bottom: 1em;
+  }
+  .form-container button {
+    background-color: #aaa; /* Lighter background for better contrast */
+    padding: 0.5em;
+    border: none;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>Welcome to TravelCo</h1>
+  </div>
+  <div class="nav">
+    <button>Home</button>
+    <button>Products</button>
+    <!-- Add more buttons as needed -->
+  </div>
+  <div class="product">
+    <!-- Repeat this section for each product -->
+    <div class="product-item">
+      <img src="path-to-image.jpg" alt="Travel Product">
+      <div class="product-description">
+        <h3>Product Name</h3>
+        <p>Description of the travel product...</p>
+        <!-- Add more specific details here -->
+      </div>
+    </div>
+    <!-- End of product section -->
+  </div>
+  <div class="form-container">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <div class="footer">
+    <p>© 2024 TravelCo</p>
+  </div>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Thank you for contacting us!');
+    });
+  </script>
+</body>
+</html>
